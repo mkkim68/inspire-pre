@@ -1,0 +1,46 @@
+[
+  {
+    "backend": "claude",
+    "model": "claude-haiku-5-5",
+    "text": "LLM 파이프라인은 입력을 받아 정해진 순서대로 LLM 호출과 전처리·후처리 단계를 실행하는 고정된 흐름입니다. 예를 들어 문서 요약을 \"청크 분할 → LLM 요약 → 결과 저장\"처럼 개발자가 단계를 미리 설계해 두는 방식입니다. 반면 AI Agent는 LLM이 목표를 보고 스스로 다음 행동(도구 호출, 검색, 코드 실행 등)을 결정하고 결과를 보며 반복하는 구조입니다.",
+    "input_tokens": 633,
+    "output_tokens": 208,
+    "latency_s": 3.565516832997673,
+    "cost_usd": 0.00024561,
+    "extra": {
+      "thinking_tokens": 0,
+      "cache_write": 0,
+      "cache_read": 631,
+      "session_usage": {
+        "claude-haiku-5-5": {
+          "inputTokens": 1203,
+          "outputTokens": 238,
+          "cacheReadInputTokens": 631,
+          "cacheCreationInputTokens": 0,
+          "webSearchRequests": 0,
+          "costUSD": 0.00024561,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 0,
+          "cacheCreationEphemeral5mInputTokens": 0,
+          "cacheCreationEphemeral1hInputTokens": 0,
+          "canonicalModel": "claude-haiku-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      }
+    }
+  },
+  {
+    "backend": "local",
+    "model": "google/gemma-4-e4b",
+    "text": "LLM 파이프라인은 입력된 요청을 받아서 정해진 단계(검색, 프롬프트 구성 등)를 거쳐 결과를 출력하는 비교적 선형적인 실행 과정입니다. 반면, AI 에이전트는 목표를 부여받으면 스스로 계획을 세우고, 필요에 따라 도구를 사용하며, 환경과 상호작용하며 목표를 달성하기 위해 반복적으로 행동하는 자율적인 시스템입니다. 따라서 파이프라인은 '정의된 작업을 수행'한다면, 에이전트는 '목표를 달성하기 위해 추론하고 실행'한다고 이해하시면 됩니다.",
+    "input_tokens": 63,
+    "output_tokens": 515,
+    "latency_s": 11.29216658299265,
+    "cost_usd": 0.0,
+    "extra": {
+      "thinking_tokens": 380
+    }
+  }
+]
